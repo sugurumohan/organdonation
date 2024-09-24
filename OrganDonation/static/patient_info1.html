@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h2{
+            text-align: center;
+        }
+        .container{
+            /* background-color:none; */
+            /* margin: center; */
+            text-align: center;
+
+
+
+            
+        }
+    input{
+        
+  border-color:black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:2px solid black;
+  border-radius: 4px;
+  width:242px;
+  text-decoration: black;
+        }
+
+        .o1{
+            width: 30px;
+            display: flex;
+        }
+        .form{
+            background-image: url(./formlogo.jpg);
+            background-repeat: no-repeat;
+             position: relative; 
+             backface-visibility:hidden;
+             background-size:cover;
+        }
+        .container {
+      position: px;
+      margin: 0px;
+    
+      width:auto;
+      }
+      /* The navbar */
+      .topnav {
+      overflow: hidden;
+      background-color: #301014cb;
+      padding: 6px 572px;
+      margin-top: 10px;
+      }
+      /* Navbar links */
+      .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+              
+              <div class="topnav">
+                <a href="/">Home</a>
+               </div>
+        <form class="form" action="/index1.js" method="post" id="contact" style="justify-content: center; border-style: solid;border-color:skyblue;border-width: 154px;background-color: blanchedalmond;">
+       <br>
+       <h2 style="margin-bottom: 20px; font-style: italic ;margin:24px 0px;">Details of the Patient</h2>
+        <br>
+        <label style="margin-right: 195px;margin-top: 30px;"> Patient Name:</label>
+           <p> <input type="text" class="text" name="name" id="name" placeholder="Enter your name " size="10" style="padding-left: 20px;"required></p>
+        <label style="margin-right: 252px;">Age:</label>
+           <p> <input type="text" name="age" id="age" placeholder="Enter your age" required></p>
+          <label style="margin-right: 189px;">Phone Number:</label>
+            <p><input type="number" name="phonenumber"required></p>
+            <label style="margin-right: 195px;">Blood Group:</label>
+            <p><input type="text" name="bg" id="bg" placeholder="Enter your bloodgroup"required></p>
+            
+            <fieldset class="field"  style="margin:10px;margin-top: 2px;display:inline-block;width:30%;">
+                <legend style="text-align: left">Gender</legend>
+                  <p> 
+                     Male<input type="radio" name="gender" value="male" id="male" style="width: 25px">   
+                     Female<input type="radio" name="gender" id="female" value="female" style="width: 25px">
+                  </p>
+            </fieldset>
+         
+            <br>
+        <p>
+            <h3> Hospital Address</h3><br>
+
+            <label style="margin-right: 195px;">Street Address:</label><br>
+            <input type="text" name="address"  id="Street" style="margin-right: 10px;"required>
+            <br>
+            <br>
+            <label style="margin-right: 149px;">Street Address Line 2:</label><br>
+            <input type="text" name="address" id="StreetAdrre"required><br>
+            <label style="margin-right: 252px;">City:</label><br>
+            <input type="text" name="address" id="City"required><br>
+                    </p>
+        
+            <label style="margin-right: 243px;">Height:</label><br>
+            <p> <input type="number" name="height" id ="height"maxlength="4" required ></p>
+        
+       <label style="margin-right: 243px;">Weight:</label><br>
+          <p>  <input type="number" name="weight" id="weight" required></p>
+        
+        <br>
+        <label style="margin-right: 184px;margin-top: 30px;">Required Organ:</label>
+           <p> <input type="text" class="text" name="organN" id="organN" placeholder="Enter your name " size="10" style="padding-left: 20px;"required></p>
+              <fieldset class="field" style="margin:10px;margin-top: 2px;display:inline-block;width:40%;">
+           <legend style="text-align: left">Urgency of the Organ</legend>
+             <p> 
+                High<input type="radio" name="urgency" value="High" id="High" style="width: 25px">   
+                Medium<input type="radio" name="urgency" id="Medium" value="Medium" style="width: 25px">
+                Low<input type="radio" name="urgency" value="Low" id="Low" style="width: 25px">   
+                    
+              </p> 
+         </fieldset>
+         
+    
+
+        <p>
+ I agree all conditions and accept <input type="checkbox" name="final" id="final" value="I accept the all conditions and accept" style="margin-right:239px" required> </p>
+            
+ <button input type="reset" value="Reset"style="background-color:grey;padding: 15px 32px;cursor: pointer;">Reset</button>
+ 
+   <button  type="submit"style="background-color: green;padding: 15px 32px;cursor: pointer;">Submit</button>
+       
+   <br>
+   <br>
+
+    </div>
+
+    </form>
+   
+</body>
+</html>

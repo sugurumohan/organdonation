@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Organs Needed for Donation</title>
+    <style>
+        body{
+            background-color:white;
+        }
+        .organ-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .organ {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer; /* Add cursor style for better user interaction */
+        }
+        
+        .organ-image {
+            width: 200px;
+            height: 200px;
+            background-color: #e9e9e9;
+            /* border-radius: 50%; */ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .organ-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .organ-name {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .topnav {
+      overflow: hidden;
+      background-color: #301014cb;
+      padding: 6px 572px;
+      margin-top: 10px;
+      }
+      /* Navbar links */
+      .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      }
+      .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+      }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="/">Home</a>
+       </div>
+    <h1>Organs Needed for Donation</h1>
+    
+    <div class="organ-container">
+        <div class="organ" >
+            <div class="organ-image">
+                <img src="heart-image.png" alt="Heart"onclick="location.href='patient_info1.html';">
+            </div>
+            <div class="organ-name">Heart</div>
+        </div>
+        
+        <div class="organ">
+            <div class="organ-image">
+                <img src="kidney-image.jpg" alt="Kidney"onclick="location.href='patient_info2.html';">
+            </div>
+            <div class="organ-name">Kidney</div>
+        </div>
+        
+        <div class="organ">
+            <div class="organ-image">
+                <img src="liver-image.png" alt="Liver"onclick="location.href='patient_info3.html';" style="width: 120%;">
+            </div>
+            <div class="organ-name">Liver</div>
+        </div>
+        
+        <!-- Add more organs here -->
+        
+    </div>
+</body>
+</html>

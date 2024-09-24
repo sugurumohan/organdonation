@@ -1,0 +1,14 @@
+
+pug
+nav#navbar.top 
+ul 
+    li #[a(href="/") Home]   
+    li #[a(href="/") About] 
+    li #[a(href="/") Form]
+
+
+    *{
+        min-height: 100%;
+        width: 100%;
+        
+    }
